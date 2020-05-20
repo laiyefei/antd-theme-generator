@@ -26,7 +26,7 @@ generateTheme(options).then(less => {
 ```
 
 
-## Below restriction is for verion 1.3.4 or less. Now after v1.3.5, there is no need to use unique hex color codes for your theme variables, you can use same code or even assign a color variable to another theme color.
+## Below restriction is for verion 1.2.2 or less. Now after v1.2.3, there is no need to use unique hex color codes for your theme variables, you can use same code or even assign a color variable to another theme color.
 ## Note: (for v1.2.3 or lower version) include all color variables in `varFile` that you want to change dynamically and assign them unique color codes. Don't assign same color to two or more variables and don't use `#fff`, `#ffffff`, `#000` or `#000000`. If you still want white or black color as default, slightly change it e.g. `#fffffe` or `#000001` which will not replace common background colors from other components. 
 
 ## If you variables have some custom color code like `fade(@primary-color, 20%)` or something that does not matches with common regex to match a valid color then add your custom regex array as `customColorRegexArray` variable in options object while executing `generateTheme(options)`.
